@@ -1,15 +1,7 @@
 <div id="app"></div>
 <!DOCTYPE html>
 <html>
-    <body>
-        <h2>Locatie</h2>
-        <label><input id="InputMeetstation" list="DropDown" type="text" value=""></label>
-        <datalist id="DropDown"></datalist>
-        <button id="zoekButton" onclick="GetAPI('https://data.buienradar.nl/2.0/feed/json', getElementById('InputMeetstation').value)">Zoek</button>
-        <div id="WeatherInfo"></div>
-
-
-    </body>
+ 
     <script>
         window.onload = Init();
 
@@ -59,4 +51,14 @@
             document.getElementById("WeatherInfo").appendChild(List);
         }
     </script>
+
+<body>
+<h2>Locatie</h2>
+<label><input id="InputMeetstation" list="DropDown" type="text" value=""></label>
+<datalist id="DropDown"></datalist>
+<button id="zoekButton" onclick="GetAPI('https://data.buienradar.nl/2.0/feed/json', getElementById('InputMeetstation').value)">Zoek</button>
+<div id="WeatherInfo"></div>
+
+
+</body>
 </html>
